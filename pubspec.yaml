@@ -39,6 +39,13 @@ dependencies:
   #### state manaagement ####
   get: ^4.6.6
 
+  #### local storage ####
+  shared_preferences: ^2.3.2
+
+  #### network ####
+  # http: ^1.1.0
+  dio: ^5.7.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:sneaker_shop/view/home/controller/sneakers_controller.dart';
+import 'package:sneaker_shop/view/product%20details%20screen/product_details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final SneakerController sneakerController = Get.put(SneakerController());
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
               title: Text(sneaker.name),
               subtitle: Text('\$${sneaker.price}'),
               onTap: () {
-                // Get.to(() => ProductDetailsScreen(sneaker: sneaker));
+                Get.to(() => ProductDetailsScreen(sneaker: sneaker));
               },
             );
           },
