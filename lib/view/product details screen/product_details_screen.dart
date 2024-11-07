@@ -1,10 +1,12 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import '../models/sneaker.dart';
+import 'package:sneaker_shop/models/sneakers%20models/sneakers_models.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Sneaker sneaker;
 
-  ProductDetailsScreen({required this.sneaker});
+  const ProductDetailsScreen({required this.sneaker});
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +29,11 @@ class ProductDetailsScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Text(sneaker.name, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              child: Text(sneaker.name, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Text('\$${sneaker.price}', style: TextStyle(fontSize: 20, color: Colors.green)),
+              child: Text('\$${sneaker.price}', style: const TextStyle(fontSize: 20, color: Colors.green)),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
